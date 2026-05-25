@@ -14,7 +14,8 @@
 
 ---
 ## 1.Title
-할인율 및 고객 인구통계학적 특성에 따른 블랙프라이데이 소비 행동 예측 모델링
+**할인율 및 고객 인구통계학적 특성에 따른 블랙프라이데이 소비 행동 예측 모델링**  
+**(Predicting Black Friday Consumer Behavior Based on Discount Rates and Customor Demographics)**
 
 ---
 ## 2. Members
