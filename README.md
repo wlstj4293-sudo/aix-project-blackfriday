@@ -54,5 +54,26 @@
 | **Purchase** | **[Target]** 고객이 해당 상품에 지출한 금액 | 예측 목표 변수 |
 
 ## 데이터 특이사항 (Data Note)
-본 데이터셋은 일부 주요 변수 Occupation, Product_Catgory_1, Product_Catgory_2, Product_Catgory_3이 실제 명칭 대신 0~20 사이의숫자 코드로 마스킹 처리되어 있습니다. 
+본 데이터셋은 일부 주요 변수 Occupation, Product_Catgory_1, Product_Catgory_2, Product_Catgory_3이 실제 명칭 대신 0~20 사이의숫자 코드로 마스킹 처리되어 있습니다.
+
+---
+## 5. Methodology
+데이터를 해석하는 방식으로 Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은 'Random Forest'와 'HistGB'방식을 사용했다. Deep Learning은 라이브러리로 'PyTorch'를 사용했고, 방식은 'Deep DNN'과 'Wide NN'방식을 사용했다.
+ **각 방식별 작동방식 및 특징** 
+1. Scikit-learn, Random Forest (머신러닝):
+•	작동 방식: 수백 개의 '결정 트리(Decision Tree)'를 각기 다른 데이터 샘플로 학습시킨 뒤, 그 결과들의 평균(회귀)이나 다수결(분류)로 최종 답을 내는 '앙상블(Ensemble)' 모델이다.
+•	특징: 데이터의 일부가 잘못되어도 전체적인 결과가 흔들리지 않아 안정적이다.
+
+2. Scikit-learn, HistGB (머신러닝 - Histogram-based Gradient Boosting):
+•	작동 방식: 데이터를 구간(Histogram)으로 나누어 처리하여 학습 속도를 획기적으로 높인 Gradient Boosting 모델이다. 이전 트리의 오차를 다음 트리가 보완하며 학습하는 방식이다.
+•	특징: 대용량 데이터에서 속도가 미친 듯이 빠르고 성능도 거의 최상위권이다.
+   
+3. PyTorch, Deep DNN (딥러닝):
+•	작동 방식: 입출력 사이의 은닉층(Hidden Layer)을 여러 층 깊게 쌓아서 데이터의 복잡하고 추상적인 특징을 찾아내는 방식이다.
+•	특징: 레이어가 깊을수록 데이터 사이의 아주 미묘하고 복잡한 상관관계를 스스로 찾아낸다.
+
+4. PyTorch, Wide NN (딥러닝):
+•	작동 방식: 층을 깊게 쌓기보다는, 한 층에 수많은 뉴런(폭)을 넓게 배치하는 방식이다.
+•	특징: 각 변수들의 직접적인 영향력을 잘 학습해. 'Wide & Deep' 모델의 한 축으로, 기억력(Wide)이 좋다.
+
 
