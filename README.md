@@ -1,6 +1,4 @@
 # AI+X: 딥러닝 2026-1 기말 프로젝트 G30조
-고객 인구통계학적 특성에 따른 블랙프라이데이 소비 행동 예측 모델링  
-(Predicting Black Friday Consumer Behavior Based on Customor Demographics)
 
 ---
 ## Title
