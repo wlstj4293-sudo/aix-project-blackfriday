@@ -14,20 +14,17 @@
 
 ---
 ## Table of Contents  
-**1. Introduction**  
-
-   1.1. Motivation  
-   1.2. Research Question  
-**2. Body**  
-
-   2.1. Datasets  
-   2.2. Methodology  
-   2.3. Analaysis & Evaluation  
-**3. Conclusion**  
-
-   3.1. Trial and error  
-   3.2. Conclusion  
-**4. Video**
+* **1. Introduction**
+  * **1.1. Motivation**
+  * **1.2. Research Question**
+* **2. Body**
+  * **2.1. Datasets**
+  * **2.2. Methodology**
+  * **2.3. Analysis & Evaluation**
+* **3. Conclusion**
+  * **3.1. Trial and Error**
+  * **3.2. Conclusion**
+* **4. Video**
 
 ---
 ## 1. Introduction
