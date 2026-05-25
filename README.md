@@ -149,7 +149,7 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 <br>
 
 <p align="center">
-<img width="1000" height="600" alt="공통가중치 부여값" src="https://github.com/user-attachments/assets/1053cfe3-8727-439c-9dc8-8fb26bf7a656" />
+<img width="666" height="400" alt="공통가중치 부여값" src="https://github.com/user-attachments/assets/1053cfe3-8727-439c-9dc8-8fb26bf7a656" />
 </p>
 
 <br>
