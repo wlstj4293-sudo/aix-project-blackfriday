@@ -104,3 +104,18 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 
 ## 2.3. Evaluation & Analaysis
 블라블라
+
+---
+
+## 3. Conclusion  
+## 3.1. Trial and error  
+<br>
+<br>
+
+## 3.2. Reference  
+<br>
+<br>
+
+## 3.3. Conclusion  
+<br>
+<br>
