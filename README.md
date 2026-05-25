@@ -48,9 +48,11 @@
 | **City_Category** | 거주 도시 유형 (A, B, C 지역) | 지리적 특성 |
 | **Stay_In_Current_City_Years** | 현재 도시에 거주한 기간 (연 수, 4+는 4년 이상) | 지리적/행동학적 특성 |
 | **Marital_Status** | 결혼 여부 (0: 미혼, 1: 기혼) | 인구통계학적 특성 |
-| **Product_Category_1** | 상품 주 카테고리 (최종 구매 예측의 핵심 변수) | 상품 특성 |
-| **Product_Category_2** | 상품 부 카테고리 (결측치 존재 가능) | 상품 특성 |
-| **Product_Category_3** | 상품 하위 카테고리 (결측치 존재 가능) | 상품 특성 |
+| **Product_Category_1** | 상품 주 카테고리 | 상품 특성 |
+| **Product_Category_2** | 상품 부 카테고리 | 상품 특성 |
+| **Product_Category_3** | 상품 하위 카테고리 | 상품 특성 |
 | **Purchase** | **[Target]** 고객이 해당 상품에 지출한 금액 | 예측 목표 변수 |
 
+## 데이터 특이사항 (Data Note)
+본 데이터셋은 일부 주요 변수가 마스킹 처리되어 있습니다. 
 
