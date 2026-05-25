@@ -101,62 +101,108 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 
 ## 2.3. Analaysis & Evaluation
 
-## 2.4. Analysis & Evaluation (실험 결과 분석 및 평가)
-
-본 프로젝트에서는 일관성 있는 실험 환경을 구축하기 위해 `GLOBAL_SEED = 42`로 고정하였으며, 총 3가지 시나리오 기반의 소스 코드(`code_1`, `code_2`, `code_3`)를 실행하여 4대 AI 아키텍처(Random Forest, LightGBM, PyTorch Deep DNN, PyTorch Wide NN)의 성능 및 변수 영향도를 다각도로 비교 분석하였습니다.
-
----
+본 프로젝트에서는 일관성 있는 실험 환경을 구축하기 위해 `GLOBAL_SEED = 42`로 고정하였으며, 총 3가지 시나리오 기반의 소스 코드(`code_1`, `code_2`, `code_3`)를 실행하여 4개의 AI 아키텍처(Random Forest, LightGBM, PyTorch Deep DNN, PyTorch Wide NN)의 성능 및 변수 영향도를 다각도로 비교 분석하였다.
+<br>
+<br>
 
 ### [실험 1] 아키텍처별 자율 최적화 학습 성능 대조 (`code_1`)
 
 * **실험 목적**: 각 인공지능 모델이 주어진 하이퍼파라미터 환경 내에서 스스로 변수별 가중치(Feature Importance)를 최적화하여 도달할 수 있는 최종 예측 성능을 대조한다.
 * **성능 지표**: $R^2$ Score(데이터 설명력, 높을수록 우수) 및 RMSE(평균 예측 오차, 낮을수록 우수)
 
+<br>
+
 #### ① 최종 예측 성능 대조 분석
+<br>
 
-<img width="1400" height="750" alt="final 성능대조" src="https://github.com/user-attachments/assets/15911165-879c-43b6-9a81-7583ed2da90f" />
+<p align="center">
+  <img width="700" height="375" alt="final 성능대조" src="https://github.com/user-attachments/assets/15911165-879c-43b6-9a81-7583ed2da90f" />
+</p>
 
-* **분석 결과**: 머신러닝 기반의 **LightGBM이 $R^2$ 14.79%, RMSE $971,040**을 기록하며 가장 우수한 성능을 보여주었습니다. 뒤를 이어 딥러닝 기반의 PyTorch Deep DNN($R^2$ 13.24%)이 견고한 성능을 도출했습니다. 
+<br>
+
+* **분석 결과**: ML 기반의 **LightGBM이 $R^2$ 14.79%, RMSE $971,040**을 기록하며 가장 우수한 성능을 보여주었다. 그 다음으로 DL 기반의 PyTorch Deep DNN($R^2$ 13.24%)이 뒤를 이었다.
 
 #### ② 아키텍처별 내부 가중치 분석 (Feature Importance)
-<img width="1500" height="1000" alt="아키텍처별 가중치 부여값" src="https://github.com/user-attachments/assets/5b26df9f-c55d-438a-bb60-35e196659d4a" />
+<br>
 
+<p align="center">
+<img width="750" height="500" alt="아키텍처별 가중치 부여값" src="https://github.com/user-attachments/assets/5b26df9f-c55d-438a-bb60-35e196659d4a" />
+</p>
 
-* **핵심 인사이트**: 모델들이 자율적으로 학습한 가중치를 시각화한 결과, **LightGBM(91.3%)**과 **PyTorch Deep DNN(91.1%)**은 구매 금액 예측에 있어 **`City_Category`** 변수에 극단적으로 높은 의존성을 보였습니다. 반면, Random Forest와 PyTorch Wide NN은 비교적 변수들을 다각도로 반영하는 성향을 보였으나 최종 성능은 하락했습니다.
+<br>
+
+* **분석 결과**: 모델들이 자율적으로 학습한 가중치를 시각화한 결과, **LightGBM(91.3%)**과 **PyTorch Deep DNN(91.1%)**은 구매 금액 예측에 있어 **`City_Category`** 변수에 극단적으로 높은 의존성을 보였다. 반면, Random Forest와 PyTorch Wide NN은 비교적 변수들을 다각도로 반영하는 성향을 보였으나 최종 성능은 다소 떨어졌다.
 
 ---
 
 ### [실험 2] 공통 변수 가중치 강제 주입 조건 하의 성능 비교 (`code_2`)
 
-* **실험 목적**: 모델 고유의 변수 가중치 최적화 기능을 배제하고, 모든 아키텍처에 **동일한 Feature Importance 가중치를 강제로 고정 주입**했을 때, 순수한 알고리즘 아키텍처 체력만으로 유의미한 성능 차이가 발생하는지 검증합니다.
+* **실험 목적**: 모델 고유의 변수 가중치 최적화 기능을 배제하고, 모든 아키텍처에 **동일한 Feature Importance 가중치를 강제로 고정 주입**했을 때, 순수한 알고리즘 아키텍처만으로 유의미한 성능 차이가 발생하는지 확인한다.
 
 #### ① 4대 아키텍처 강제 고정 주입 공통 변수 가중치
-<img width="1000" height="600" alt="공통가중치 부여값" src="https://github.com/user-attachments/assets/1053cfe3-8727-439c-9dc8-8fb26bf7a656" />
+<br>
 
+<p align="center">
+<img width="500" height="300" alt="공통가중치 부여값" src="https://github.com/user-attachments/assets/1053cfe3-8727-439c-9dc8-8fb26bf7a656" />
+</p>
 
-* **주입 조건**: 실험 1에서 지배적인 영향력을 보인 `City_Category`(48.7%), `Gender`(14.4%), `Gender_Age`(12.4%) 순으로 통제된 가중치 배율을 고정 주입했습니다.
+<br>
+
+* **주입 조건**: [실험 1]에서 지배적인 영향력을 보인 `City_Category`(48.7%), `Gender`(14.4%), `Gender_Age`(12.4%) 순으로 가중치 배율을 고정하여 주입하였다.
 
 #### ② 동일 가중치 상태의 최종 성능 대조
-<img width="1400" height="750" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/c698af8b-3aab-4121-a95a-0818d8cff720" />
 
+<br>
 
-* **분석 결과**: 놀랍게도 가중치를 통제하자 **PyTorch Deep DNN이 $R^2$ 17.15%, RMSE $957,520**으로 치고 나가며 자율 최적화 때보다 더 높은 전체 1위의 성능을 기록했습니다. 
-* **인사이트**: 비선형적인 다층 신경망(Deep DNN) 구조는 도메인 지식이나 통제된 특성(Feature)이 정교하게 가이드될 때, 트리 기반 머신러닝보다 데이터의 복잡한 상관관계를 추론하는 능력이 극대화됨을 증명합니다.
+<p align="center">
+<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/c698af8b-3aab-4121-a95a-0818d8cff720" />
+</p>
+
+<br>
+
+* **분석 결과**: 놀랍게도 가중치를 고정하자 **PyTorch Deep DNN이 $R^2$ 17.15%, RMSE $957,520**으로, 자율 최적화 때보다 더 높은 전체 1위의 성능을 기록했다. 비선형적인 다층 신경망(Deep DNN) 구조는 도메인 지식이나 통제된 특성(Feature)이 정교하게 가이드될 때, 트리 기반 머신러닝보다 데이터의 복잡한 상관관계를 추론하는 능력이 극대화됨이 증명되었다.
 
 ---
 
-### 🎯 [실험 3] `City_Category` 가중치 100% 부여 단독 학습 실험 (`code_3`)
+### [실험 3] `City_Category` 가중치 100% 부여 단독 학습 실험 (`code_3`)
 
-* **실험 목적**: 앞선 실험들에서 핵심 지표로 작용한 거주 도시 정보(`City_Category`)의 영향력을 극단적으로 스케일업(100% 부여)하여, 오직 **이 단 하나의 Feature만을 가지고 예측을 수행할 때** 아키텍처별 방어력을 확인합니다.
-
-#### ① City_Category 단독 학습 시 아키텍처별 최종 성능 대조
-<img width="1400" height="750" alt="city100성능대조" src="https://github.com/user-attachments/assets/71141eb3-518c-4f57-97f1-8434e3a47888" />
+* **실험 목적**: 앞선 실험들에서 핵심 지표로 작용한 거주 도시 정보(`City_Category`)의 영향력을 극단적으로 스케일업(100%)하여, 오직 **이 단 하나의 Feature만을 가지고 예측을 수행할 때** 아키텍처별 성능을 비교한다.
 
 
-* **분석 결과**: 단 하나의 변수만으로 학습을 강제했음에도 불구하고, LightGBM($R^2$ 13.69%)과 Random Forest($R^2$ 13.66%)가 놀라운 수준으로 성능을 방어해 냈습니다.
-* **인사이트**: 
-  1. 본 블랙프라이데이 데이터셋의 예측 타겟(`Purchase`)은 **소비자가 어떤 도시(A, B, C)에 거주하느냐에 따라 소비 규모의 정체성이 상당 부분 결정된다**는 데이터의 내재적 특성을 방증합니다.
-  2. 트리 기반 알고리즘(ML)은 단일 범주형 변수의 분기(Split) 연산만으로도 수치형 타겟의 기댓값을 매우 정교하게 맵핑해내는 강인함(Robustness)을 보여준 반면, 딥러닝 아키텍처는 단일 변수 환경에서 상대적으로 취약한 모습을 보였습니다.
+##### ** 실험 결과 시각화 대조**
+
+* **대시보드 1: 공통 변수 가중치 부여 조건 (종합 학습)**
+
+<br>
+
+<p align="center">
+   
+<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/8d237df6-0d83-45a3-9558-72645a859774" />
+
+</p>
+
+<br>
+
+* **대시보드 2: City_Category 가중치 100% 부여 조건 (단독 학습/고정)**
+
+<br>
+
+<p align="center">
+  <img width="700" height="375" alt="city100성능대조" src="https://github.com/user-attachments/assets/287e43ef-bb6f-4692-a6d0-b91784dbadeb" />
+
+</p>
+
+<br>
+
+
+* **분석결과① 전통적 머신러닝 모델(Random Forest, HistGB)의 성능 상승**
+  * **현상**: `City_Category` 위주로 피처를 제한했을 때, Random Forest는 $R^2$ Score가 **9.71%에서 13.66%로**, HistGB(LightGBM형)는 **14.79%에서 13.69%로(오차 단축 및 전반적 안정화)** 데이터 설명력이 오히려 상승하거나 유지되는 경향을 보임.
+  * **원인 분석**: 트리(Tree) 기반의 ML 모델은 고차원의 복잡한 데이터보다 패턴이 명확하고 단순한 변수가 주어졌을 때 과적합(Overfitting)이 방지되는 특성이 있음. `City_Category`라는 명확한 지리적 경계 지표가 스크리닝 역할을 하여, 노이즈가 줄어든 상태에서 트리 분기가 더 유의미하게 이루어진 것으로 판단됨.
+
+* **분석결과② 딥러닝 모델(PyTorch Deep DNN, Wide NN)의 성능 하락**
+  * **현상**: 종합 학습 조건에서 17.15%로 가장 높은 설명력을 보였던 PyTorch Deep DNN은 변수 고정 시 **12.97%로 급격히 하락**했으며, Wide NN 역시 **16.49%에서 13.35%로** 성능이 크게 감소함.
+  * **원인 분석**: 인공신경망(DNN) 구조는 수많은 변수 간의 복잡한 비선형적 상호작용(Interaction)을 스스로 학습하며 거대한 가중치 공간을 형성할 때 진가를 발휘함. 그러나 입력 피처를 하나의 도메인(`City_Category`)으로 극단적으로 제한하자, 신경망이 학습할 수 있는 정보의 총량이 부족해져 표현력(Expressiveness)을 잃고 성능이 저하된 것으로 해석됨.
 
 
 ---
