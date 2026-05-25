@@ -7,24 +7,28 @@
 
 ---
 ## Members
-**신소재공학부 2020045078 송진서**  
-**신소재공학부 2021091476 김민철**  
-**신소재공학부 2023084575 서민석**  
-**신소재공학부 2023027492 이경현**  
+신소재공학부 2020045078 송진서  
+신소재공학부 2021091476 김민철  
+신소재공학부 2023084575 서민석  
+신소재공학부 2023027492 이경현  
 
 ---
-## Table of Contents  
-* **1. Introduction**
-  * **1.1. Motivation**
-  * **1.2. Research Question**
-* **2. Body**
-  * **2.1. Datasets**
-  * **2.2. Methodology**
-  * **2.3. Analysis & Evaluation**
-* **3. Conclusion**
-  * **3.1. Trial and Error**
-  * **3.2. Conclusion**
-* **4. Video**
+## Table of Contents
+<br>
+
+1. Introduction  
+ 1.1. Motivation  
+ 1.2. Research Question  
+2. Body  
+ 2.1. Datasets  
+ 2.2. Methodology  
+ 2.3. Analysis & Evaluation  
+3. Conclusion  
+ 3.1. Trial and Error  
+ 3.2. Conclusion  
+4. Video
+
+<br>
 
 ---
 ## 1. Introduction
