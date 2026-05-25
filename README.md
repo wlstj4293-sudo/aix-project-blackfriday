@@ -25,8 +25,7 @@
    2.3. Evaluation & Analaysis 
 3. Conclusion  
    3.1. Trial and error  
-   3.2. Reference  
-   3.3. Conclusion  
+   3.2. Conclusion  
 
 ---
 ## 1. Introduction
@@ -152,11 +151,7 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 <br>
 <br>
 
-## 3.2. Reference  
-<br>
-<br>
-
-## 3.3. Conclusion  
+## 3.2. Conclusion  
 <br>
 <br>
 
