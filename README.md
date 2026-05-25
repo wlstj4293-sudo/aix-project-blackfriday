@@ -22,7 +22,7 @@
 2. Body  
    2.1. Datasets  
    2.2. Methodology  
-   2.3. Evaluation & Analaysis 
+   2.3. Analaysis & Evaluation
 3. Conclusion  
    3.1. Trial and error  
    3.2. Conclusion  
@@ -38,7 +38,7 @@
 이처럼 동시간대에 역동적으로 변하는 매출 지표를 보면서 과연 소비자들이 인구통계학적 특성에 따라 어떻게 반응하는 지 데이터 과학적 호기심이 생겨 이 주제를 선정하게 되었다.
 
 ## 1.2. Reasearch Question
-블라블라
+
 
 <br>
 
@@ -51,7 +51,7 @@
 본 프로젝트에서는 Kaggle의 [Black Friday Sale 데이터셋](https://www.kaggle.com/datasets/rajeshrampure/black-friday-sale)을 활용한다. 데이터셋은 소비자의 인구통계학적 특성 정보와 상품 카테고리, 그리고 최종 구매 금액을 포함한 총 12개의 칼럼(Features)으로 구성되어 있다. 본 feature들은 크게 고객 식별 / 상품 식별 / 인구통계학적 특성 / 상품 특성 / 예측 목표 변수로 분류하였다.
 <br>
 <br>
-### 📋 데이터셋 변수 정의 (Feature Definition)
+### 데이터셋 변수 정의 (Feature Definition)
 
 | 변수명 (Feature) | 설명 | 분류 |
 | :--- | :--- | :--- |
@@ -101,8 +101,7 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 <br>
 <br>
 
-## 2.3. Evaluation & Analaysis
-블라블라
+## 2.3. Analaysis & Evaluation
 
 ---
 
