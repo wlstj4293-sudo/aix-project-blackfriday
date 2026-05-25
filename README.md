@@ -85,11 +85,11 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 
  **각 방식별 작동방식 및 특징**  
  
-**1. Scikit-learn, Random Forest (머신러닝)**  
+**1. Random Forest (머신러닝)**  
 •	**작동 방식**: 수백 개의 '결정 트리(Decision Tree)'를 각기 다른 데이터 샘플로 학습시킨 뒤, 그 결과들의 평균(회귀)이나 다수결(분류)로 최종 답을 내는 '앙상블(Ensemble)' 모델.  
 •	**특징**: 데이터의 일부가 잘못되어도 전체적인 결과가 흔들리지 않아 안정적이다.
 
-**2. Scikit-learn, HistGB (머신러닝 - Histogram-based Gradient Boosting)**  
+**2. HistGB (머신러닝 - Histogram-based Gradient Boosting)**  
 •	**작동 방식**: 데이터를 구간(Histogram)으로 나누어 처리하여 학습 속도를 획기적으로 높인 Gradient Boosting 모델로, 이전 트리의 오차를 다음 트리가 보완하며 학습하는 방식.  
 •	**특징**: 대용량 데이터에서 속도가 미친 듯이 빠르고 성능도 거의 최상위권이다.
    
