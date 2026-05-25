@@ -22,7 +22,7 @@
 2. Body  
    2.1. Datasets  
    2.2. Methodology  
-   2.3. Analaysis & Evaluation  
+   2.3. Evaluation & Analaysis 
 3. Conclusion  
    3.1. Trial and error  
    3.2. Reference  
