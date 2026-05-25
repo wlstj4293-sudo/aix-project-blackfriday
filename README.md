@@ -3,7 +3,7 @@
 ---
 ## Title
 **고객 인구통계학적 특성에 따른 블랙프라이데이 소비 행동 예측 모델링**  
-**(Predicting Black Friday Consumer Behavior Based on Customor Demographics)**
+**(Predicting Black Friday Consumer Behavior Based on Customer Demographics)**
 
 ---
 ## Members
@@ -20,7 +20,7 @@
 2. Body  
    2.1. Datasets  
    2.2. Methodology  
-   2.3. Analaysis & Evaluation
+   2.3. Analaysis & Evaluation  
 3. Conclusion  
    3.1. Trial and error  
    3.2. Conclusion  
@@ -31,11 +31,11 @@
 ## 1.1. Motivation
 
 **실시간 소비 데이터의 시각화와 호기심**  
-매년 '무신사 블랙프라이데이' 같은 국내외 대형 이커머스 플랫폼에서는 행사 기간 동안 실시간 누적 매출액과 판매 흐름을 대중에게 투명하게 공개하고 있다.  
-특히 '무신사'의 경우 2022년부터 2025년까지의 블프 기간동안의 매출액을 살펴보면 2135억 원, 3083억 원, 3654억 원, 3685억 원으로 소비자들의 뜨거운 관심과 압도적인 매출을 보여준다.  
-이처럼 동시간대에 역동적으로 변하는 매출 지표를 보면서 과연 소비자들이 블프 기간동안 인구통계학적 특성에 따라 어떻게 반응하는 지 데이터 과학적 호기심이 생겨 이 주제를 선정하게 되었다.
+매년 '무신사 블랙프라이데이' 같은 국내외 대형 이커머스 플랫폼에서는 행사 시즌 동안 실시간 누적 매출액과 판매 흐름을 대중에게 투명하게 공개하고 있다.  
+특히 '무신사'의 경우 2022년부터 2025년까지의 블프 시즌 동안의 매출액을 살펴보면 2135억 원, 3083억 원, 3654억 원, 3685억 원으로 소비자들의 뜨거운 관심과 압도적인 매출을 보여준다.  
+이처럼 동시간대에 역동적으로 변하는 매출 지표를 보면서 과연 소비자들이 블프 시즌 동안 인구통계학적 특성에 따라 어떻게 반응하는 지 데이터 과학적 호기심이 생겨 이 주제를 선정하게 되었다.
 
-## 1.2. Reasearch Question
+## 1.2. Research Question
 * **[실험1] 아키텍처별 자율 최적화 학습 성능 대조**  
 각 머신러닝/딥러닝 아키텍처(LightGBM, PyTorch, CatBoost, Scikit-learn)가 데이터 본연의 특성을 자율적으로 학습했을 때, 베이스라인 모델 간의 최종 예측 정확도(RMSE) 차이는 어떠한가?
 * **[실험2] 공통 변수 가중치 강제 주입 조건 하의 성능 비교**  
@@ -74,7 +74,7 @@
 
 
 ## 데이터 특이사항 (Data Note)
-본 데이터셋은 일부 주요 변수 'Occupation', 'Product_Catgory_1', 'Product_Catgory_2', 'Product_Catgory_3'이 실제 명칭 대신 0~20 사이의숫자 코드로 마스킹 처리되어 있다.
+본 데이터셋은 일부 주요 변수 'Occupation', 'Product_Category_1', 'Product_Category_2', 'Product_Category_3'이 실제 명칭 대신 0~20 사이의숫자 코드로 마스킹 처리되어 있다.
 <br>
 <br>
 <br>
@@ -90,7 +90,7 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 •	**특징**: 데이터의 일부가 잘못되어도 전체적인 결과가 흔들리지 않아 안정적이다.
 
 **2. Scikit-learn, HistGB (머신러닝 - Histogram-based Gradient Boosting)**  
-•	**작동 방식**: 데이터를 구간(Histogram)으로 나누어 처리하여 학습 속도를 획기적으로 높인 Gradient Boosting 모델이으로, 이전 트리의 오차를 다음 트리가 보완하며 학습하는 방식.  
+•	**작동 방식**: 데이터를 구간(Histogram)으로 나누어 처리하여 학습 속도를 획기적으로 높인 Gradient Boosting 모델로, 이전 트리의 오차를 다음 트리가 보완하며 학습하는 방식.  
 •	**특징**: 대용량 데이터에서 속도가 미친 듯이 빠르고 성능도 거의 최상위권이다.
    
 **3. PyTorch, Deep DNN (딥러닝)**  
@@ -99,7 +99,7 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 
 **4. PyTorch, Wide NN (딥러닝)**  
 •	**작동 방식**: 층을 깊게 쌓기보다는, 한 층에 수많은 뉴런(폭)을 넓게 배치하는 방식.  
-•	**특징**: 각 변수들의 직접적인 영향력을 잘 학습해. 'Wide & Deep' 모델의 한 축으로, 기억력(Wide)이 좋다.
+•	**특징**: 각 변수들의 직접적인 영향력을 잘 학습하고 'Wide & Deep' 모델의 한 축으로, 기억력(Wide)이 좋다.
 
 <br>
 <br>
