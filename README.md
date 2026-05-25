@@ -3,40 +3,54 @@
 (Predicting Black Friday Consumer Behavior Based on Customor Demographics)
 
 ---
-## Table of Contents
-1. Title
-2. Members
-3. Motivation
-4. Datasets
-5. Methodology
-6. Evaluation & Analaysis
-7. Related Work
-8. Conclusion
-
----
-## 1.Title
+## Title
 **고객 인구통계학적 특성에 따른 블랙프라이데이 소비 행동 예측 모델링**  
 **(Predicting Black Friday Consumer Behavior Based on Customor Demographics)**
 
 ---
-## 2. Members
+## Members
 신소재공학부 2020045078 송진서  
 신소재공학부 2021091476 김민철  
 신소재공학부 2023084575 서민석  
 신소재공학부 2023027492 이경현  
 
 ---
-## 3. Motivation
+## Table of Contents  
+1. Introduction  
+   1.1. Motivation  
+   1.2. Reasearch Question  
+2. Body  
+   2.1. Datasets  
+   2.2. Methodology  
+   2.3. Analaysis & Evaluation  
+3. Conclusion  
+   3.1. Trial and error  
+   3.2. Reference  
+   3.3. Conclusion  
+
+---
+## 1. Introduction
+
+## 1.1. Motivation
+
 **실시간 소비 데이터의 시각화와 호기심**  
 매년 '무신사 블랙프라이데이' 같은 국내외 대형 이커머스 플랫폼에서는 행사 기간 동안 실시간 누적 매출액과 판매 흐름을 대중에게 투명하게 공개하고 있다.  
 특히 '무신사'의 경우 2022년부터 2025년까지의 블프 기간동안의 매출액을 살펴보면 2135억 원, 3083억 원, 3654억 원, 3685억 원으로 소비자들의 뜨거운 관심과 압도적인 매출을 보여준다.  
 이처럼 동시간대에 역동적으로 변하는 매출 지표를 보면서 과연 소비자들이 인구통계학적 특성에 따라 어떻게 반응하는 지 데이터 과학적 호기심이 생겨 이 주제를 선정하게 되었다.
 
+## 1.2. Reasearch Question
+블라블라
+
+<br>
 ---
-## 4. Datasets
+
+## 2.Body
+
+## 2.1. Datasets
 
 본 프로젝트에서는 Kaggle의 [Black Friday Sale 데이터셋](https://www.kaggle.com/datasets/rajeshrampure/black-friday-sale)을 활용한다. 데이터셋은 소비자의 인구통계학적 특성 정보와 상품 카테고리, 그리고 최종 구매 금액을 포함한 총 12개의 칼럼(Features)으로 구성되어 있다. 본 feature들은 크게 고객 식별 / 상품 식별 / 인구통계학적 특성 / 상품 특성 / 예측 목표 변수로 분류하였다.
-
+<br>
+<br>
 ### 📋 데이터셋 변수 정의 (Feature Definition)
 
 | 변수명 (Feature) | 설명 | 분류 |
@@ -53,12 +67,16 @@
 | **Product_Category_2** | 상품 부 카테고리 | 상품 특성 |
 | **Product_Category_3** | 상품 하위 카테고리 | 상품 특성 |
 | **Purchase** | **[Target]** 고객이 해당 상품에 지출한 금액 | 예측 목표 변수 |
+<br>
+
 
 ## 데이터 특이사항 (Data Note)
 본 데이터셋은 일부 주요 변수 'Occupation', 'Product_Catgory_1', 'Product_Catgory_2', 'Product_Catgory_3'이 실제 명칭 대신 0~20 사이의숫자 코드로 마스킹 처리되어 있다.
+<br>
+<br>
+<br>
 
----
-## 5. Methodology
+## 2.2. Methodology
  
 Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은 'Random Forest'와 'HistGB'방식을 사용했다. Deep Learning은 라이브러리로 'PyTorch'를 사용했고, 방식은 'Deep DNN'과 'Wide NN'방식을 사용했다.
 
@@ -80,4 +98,8 @@ Machine Learning은 라이브러리로 'Scikit-learn'을 사용했고, 방식은
 •	**작동 방식**: 층을 깊게 쌓기보다는, 한 층에 수많은 뉴런(폭)을 넓게 배치하는 방식.  
 •	**특징**: 각 변수들의 직접적인 영향력을 잘 학습해. 'Wide & Deep' 모델의 한 축으로, 기억력(Wide)이 좋다.
 
+<br>
+<br>
 
+## 2.3. Evaluation & Analaysis
+블라블라
