@@ -74,7 +74,7 @@
 
 
 ## 데이터 특이사항 (Data Note)
-본 데이터셋은 일부 주요 변수 'Occupation', 'Product_Category_1', 'Product_Category_2', 'Product_Category_3'이 실제 명칭 대신 0~20 사이의숫자 코드로 마스킹 처리되어 있다.
+본 데이터셋은 일부 주요 변수 'Occupation', 'Product_Category_1', 'Product_Category_2', 'Product_Category_3'이 실제 명칭 대신 0~20 사이의 숫자 코드로 마스킹 처리되어 있다.
 <br>
 <br>
 <br>
