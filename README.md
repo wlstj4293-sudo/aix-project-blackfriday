@@ -28,8 +28,6 @@
  3.2. Conclusion  
 4. Video
 
-<br>
-
 ---
 ## 1. Introduction
 
