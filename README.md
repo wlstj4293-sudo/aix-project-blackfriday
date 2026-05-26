@@ -54,7 +54,7 @@
 
 ## 2.1. Datasets
 
-본 프로젝트에서는 Kaggle의 [Black Friday Sale 데이터셋](https://www.kaggle.com/datasets/rajeshrampure/black-friday-sale)을 활용한다. 데이터셋은 소비자의 인구통계학적 특성 정보와 상품 카테고리, 그리고 최종 구매 금액을 포함한 총 12개의 칼럼(Features)으로 구성되어 있다. 본 feature들은 크게 고객 식별 / 상품 식별 / 인구통계학적 특성 / 상품 특성 / 예측 목표 변수로 분류하였다.
+본 프로젝트에서는 Kaggle의 [Black Friday Sale 데이터셋](https://www.kaggle.com/datasets/rajeshrampure/black-friday-sale)을 활용한다. 이 데이터셋은 소비자의 인구통계학적 특성 정보와 상품 카테고리, 그리고 최종 구매 금액을 포함한 총 12개의 칼럼(Features)으로 구성되어 있다. 본 칼럼들은 크게 고객 식별 / 상품 식별 / 인구통계학적 특성 / 상품 특성 / 예측 목표 변수로 분류하였다.
 <br>
 <br>
 ### 데이터셋 변수 정의 (Feature Definition)
@@ -65,19 +65,19 @@
 | **Product_ID** | 상품 고유 식별 번호 | 상품 식별 |
 | **Gender** | 성별 (M: 남성, F: 여성) | 인구통계학적 특성 |
 | **Age** | 연령대별 그룹 (0-17, 18-25, 26-35, 36-45, 46-50, 51-55, 55+) | 인구통계학적 특성 |
-| **Occupation** | 직업군 마스킹 코드 (0 ~ 20 종류) | 인구통계학적 특성 |
+| **Occupation** | 직업군 마스킹 코드 (0 ~ 20 종류)(Masked) | 인구통계학적 특성 |
 | **City_Category** | 거주 도시 유형 (A, B, C 지역) | 인구통계학적 특성 |
 | **Stay_In_Current_City_Years** | 현재 도시에 거주한 기간 (연 수, 4+는 4년 이상) | 인구통계학적 특성 |
 | **Marital_Status** | 결혼 여부 (0: 미혼, 1: 기혼) | 인구통계학적 특성 |
-| **Product_Category_1** | 상품 주 카테고리 | 상품 특성 |
-| **Product_Category_2** | 상품 부 카테고리 | 상품 특성 |
-| **Product_Category_3** | 상품 하위 카테고리 | 상품 특성 |
-| **Purchase** | **[Target]** 고객이 해당 상품에 지출한 금액 | 예측 목표 변수 |
+| **Product_Category_1** | 상품 주 카테고리(Masked) | 상품 특성 |
+| **Product_Category_2** | 상품 부 카테고리(Masked) | 상품 특성 |
+| **Product_Category_3** | 상품 하위 카테고리(Masked) | 상품 특성 |
+| **Purchase** | 고객이 해당 상품에 지출한 금액 **[Target]** | 예측 목표 변수 |
 <br>
 
 
 ## 데이터 특이사항 (Data Note)
-본 데이터셋은 일부 주요 변수 'Occupation', 'Product_Category_1', 'Product_Category_2', 'Product_Category_3'이 실제 명칭 대신 0~20 사이의 숫자 코드로 마스킹 처리되어 있다.
+컬럼 설명에서 “Masked”라고 표시된 것은 범주형 데이터를 이미 숫자형 데이터로 변환한 것을 의미한다. 이 데이터셋에선 Occupation, Product_Category_1, Product_Category_2, Product_Category_3가 이에 해당한다.
 <br>
 <br>
 <br>
