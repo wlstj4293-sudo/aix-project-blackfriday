@@ -14,8 +14,6 @@
 
 ---
 # Table of Contents
-<br>
-
 1. Introduction  
  1.1. Motivation  
  1.2. Research Question  
