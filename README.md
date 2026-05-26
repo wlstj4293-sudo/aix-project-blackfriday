@@ -69,10 +69,10 @@
 | **City_Category** | 거주 도시 유형 (A, B, C 지역) | 인구통계학적 특성 |
 | **Stay_In_Current_City_Years** | 현재 도시에 거주한 기간 (연 수, 4+는 4년 이상) | 인구통계학적 특성 |
 | **Marital_Status** | 결혼 여부 (0: 미혼, 1: 기혼) | 인구통계학적 특성 |
-| **Product_Category_1** | 상품 주 카테고리(Masked) | 상품 특성 |
-| **Product_Category_2** | 상품 부 카테고리(Masked) | 상품 특성 |
-| **Product_Category_3** | 상품 하위 카테고리(Masked) | 상품 특성 |
-| **Purchase** | 고객이 해당 상품에 지출한 금액 **[Target]** | 예측 목표 변수 |
+| **Product_Category_1** | 상품 주 카테고리 (Masked) | 상품 특성 |
+| **Product_Category_2** | 상품 부 카테고리 (Masked) | 상품 특성 |
+| **Product_Category_3** | 상품 하위 카테고리 (Masked) | 상품 특성 |
+| **Purchase** | 고객이 해당 상품에 지출한 금액  **[Target]** | 예측 목표 변수 |
 <br>
 
 
