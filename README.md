@@ -125,16 +125,15 @@
 ### [실험 1] 아키텍처별 자율 최적화 학습 성능 대조 (`code_1`)
 
 * **실험 목적**: 각 인공지능 모델이 주어진 하이퍼파라미터 환경 내에서 스스로 변수별 가중치(Feature Importance)를 최적화하여 도달할 수 있는 최종 예측 성능을 대조한다.
-* **성능 지표**: $R^2$ Score(데이터 설명력, 높을수록 우수) 및 RMSE(평균 예측 오차, 낮을수록 우수)
+* **성능 지표**: $R^2$ Score(데이터 설명력, 높을수록 우수), RMSE(평균 예측 오차, 낮을수록 우수), Time(효율성 및 비, 낮을수록 우수)
 
 <br>
 
 ### ① 최종 예측 성능 대조 분석
-<br>
+<img width="801" height="521" alt="image" src="https://github.com/user-attachments/assets/f7fd72c2-ebe8-445b-b553-505db632fca7" /> <img width="799" height="516" alt="image" src="https://github.com/user-attachments/assets/329729de-44e0-43f8-a93f-454d208d3769" /> <img width="802" height="512" alt="image" src="https://github.com/user-attachments/assets/1226c6d5-f4f0-4276-889a-883d1fd69eb6" />
 
-<p align="center">
-  <img width="700" height="375" alt="final 성능대조" src="https://github.com/user-attachments/assets/15911165-879c-43b6-9a81-7583ed2da90f" />
-</p>
+
+
 
 <br>
 
