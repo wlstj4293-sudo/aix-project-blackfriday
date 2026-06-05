@@ -24,7 +24,7 @@
 3. Conclusion  
  3.1. Trial & Error  
  3.2. Discussion  
- 3.3. Team roles
+ 3.3. Team Roles
 5. Video
 
 ---
@@ -346,7 +346,7 @@ Deep DNN은 [128→64→32→1] 로 레이어가 4개이며, 각 레이어마다
 <br>
 <br>
 
-## 3.3. Team roles  
+## 3.3. Team Roles  
 송진서: Dataset Processing / Code modification Support / Main blog writing & editing  
 김민철: Dataset Processing / Architecture selection / Blog writing (Conclusion) / Youtube video recording  
 서민석: Dataset Processing / Main programming / Blog writing (Analysis & Evaluation)  
