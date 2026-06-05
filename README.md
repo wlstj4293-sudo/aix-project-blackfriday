@@ -158,16 +158,17 @@
 * **실험 목적**: 모델 고유의 변수 가중치 최적화 기능을 배제하고, 모든 아키텍처에 **동일한 Feature Importance 가중치를 강제로 고정 주입**했을 때, 순수한 알고리즘 아키텍처만으로 유의미한 성능 차이가 발생하는지 확인한다.
 
 ### ① 4대 아키텍처 강제 고정 주입 공통 변수 가중치
+<img width="508" height="327" alt="image" src="https://github.com/user-attachments/assets/a6d7a414-0ee6-4cce-a6ef-5bd16c07685e" />
 
 
 * **주입 조건**: [실험 1]에서 지배적인 영향력을 보인 `City_Category`(48.7%), `Gender`(14.4%), `Gender_Age`(12.4%) 순으로 가중치 배율을 고정하여 주입하였다.
 
 ### ② 동일 가중치 상태의 최종 성능 대조
+<img width="827" height="260" alt="image" src="https://github.com/user-attachments/assets/a8207648-be85-4d49-bb9f-2115b857acdd" />
 
 
 
-* **분석 결과**: 놀랍게도 가중치를 고정하자 **PyTorch Deep DNN이 $R^2$ 17.15%, RMSE $957,520**으로, 자율 최적화 때보다 더 높은 전체 1위의 성능을 기록했다. 비선형적인 다층 신경망(Deep DNN) 구조는 도메인 지식이나 통제된 특성이 정교하게 가이드될 때, 트리 기반 머신러닝보다 데이터의 복잡한 상관관계를 추론하는 능력이 극대화됨이 증명되었다.
-
+* **분석 결과**: 놀랍게도 가중치를 고정하자 **PyTorch Deep DNN이 $R^2$ 17.15%**으로, 자율 최적화 때보다 더 높은 전체 1위의 성능을 기록했다. 비선형적인 다층 신경망(Deep DNN) 구조는 도메인 지식이나 통제된 특성이 정교하게 가이드될 때, 트리 기반 머신러닝보다 데이터의 복잡한 상관관계를 추론하는 능력이 극대화됨이 증명되었다. 그러나 Deep DNN 구조가 가장 많은 시간 자원을 소모하였다.
 ---
 
 ### [실험 3] `City_Category` 가중치 100% 부여 단독 학습 실험 (`code_3`)
@@ -178,10 +179,11 @@
 ### ** 실험 결과 시각화 대조**
 
 * **그래프 1: 공통 변수 가중치 부여 조건 (종합 학습)**
-
+<img width="827" height="260" alt="image" src="https://github.com/user-attachments/assets/a8207648-be85-4d49-bb9f-2115b857acdd" />
 
 * **그래프 2: City_Category 가중치 100% 부여 조건 (단독 학습/고정)**
 
+<img width="1258" height="402" alt="image" src="https://github.com/user-attachments/assets/ddfd3b9b-40b6-4e2d-8fd0-2a4d7a1aa014" />
 
 
 
