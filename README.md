@@ -129,7 +129,7 @@
 * **성능 지표**: $R^2$ Score(데이터 설명력, 높을수록 우수), RMSE(평균 예측 오차, 낮을수록 우수), Time(효율성 및 비용, 낮을수록 우수)
 
 $R^2$ Score의 정의는 다음과 같다.
-\(R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2} = 1 - \frac{SSE}{SST}\)
+$\(R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2} = 1 - \frac{SSE}{SST}\)$
 
 
 RMSE의 정의는 다음과 같다.
