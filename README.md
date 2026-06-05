@@ -158,23 +158,13 @@
 * **실험 목적**: 모델 고유의 변수 가중치 최적화 기능을 배제하고, 모든 아키텍처에 **동일한 Feature Importance 가중치를 강제로 고정 주입**했을 때, 순수한 알고리즘 아키텍처만으로 유의미한 성능 차이가 발생하는지 확인한다.
 
 ### ① 4대 아키텍처 강제 고정 주입 공통 변수 가중치
-<br>
 
-<img width="822" height="260" alt="image" src="https://github.com/user-attachments/assets/e3f9d18b-ca2e-44e0-8eaf-cea6745f7bf3" />
-
-<br>
 
 * **주입 조건**: [실험 1]에서 지배적인 영향력을 보인 `City_Category`(48.7%), `Gender`(14.4%), `Gender_Age`(12.4%) 순으로 가중치 배율을 고정하여 주입하였다.
 
 ### ② 동일 가중치 상태의 최종 성능 대조
 
-<br>
 
-<p align="center">
-<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/c698af8b-3aab-4121-a95a-0818d8cff720" />
-</p>
-
-<br>
 
 * **분석 결과**: 놀랍게도 가중치를 고정하자 **PyTorch Deep DNN이 $R^2$ 17.15%, RMSE $957,520**으로, 자율 최적화 때보다 더 높은 전체 1위의 성능을 기록했다. 비선형적인 다층 신경망(Deep DNN) 구조는 도메인 지식이나 통제된 특성이 정교하게 가이드될 때, 트리 기반 머신러닝보다 데이터의 복잡한 상관관계를 추론하는 능력이 극대화됨이 증명되었다.
 
@@ -189,22 +179,10 @@
 
 * **그래프 1: 공통 변수 가중치 부여 조건 (종합 학습)**
 
-<br>
-
-<p align="center">
-<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/c698af8b-3aab-4121-a95a-0818d8cff720" />
-</p>
-
-<br>
 
 * **그래프 2: City_Category 가중치 100% 부여 조건 (단독 학습/고정)**
 
-<br>
 
-<img width="1278" height="408" alt="image" src="https://github.com/user-attachments/assets/49509da0-9025-4c27-bb11-d676ef6fe58d" />
-
-
-<br>
 
 
 * **분석결과① 전통적 머신러닝 모델(Random Forest, HistGB)의 성능 상승**
