@@ -7,10 +7,10 @@
 
 ---
 # Members
-신소재공학부 2020045078 송진서  
-신소재공학부 2021091476 김민철  
-신소재공학부 2023084575 서민석  
-신소재공학부 2023027492 이경현  
+송진서, 신소재공학부, wlstj4293@hanyang.ac.kr  
+김민철, 신소재공학부, kmfe0710@naver.com
+서민석, 신소재공학부, sms100450@naver.com
+이경현, 신소재공학부, 31245095a@gmail.com
 
 ---
 # Table of Contents
@@ -23,7 +23,7 @@
  2.3. Analysis & Evaluation  
 3. Conclusion  
  3.1. Trial and Error  
- 3.2. Conclusion  
+ 3.2. Discussion  
 4. Video
 
 ---
@@ -269,7 +269,7 @@
 <br>
 <br>
 
-## 3.2. Conclusion  
+## 3.2. Discussion  
 본 프로젝트는 고객의 인구통계학적 특성에 따른 블랙프라이데이 소비 금액을 예측하기 위해 머신러닝(ML)과 딥러닝(DL)을 아우르는 4개의 아키텍처를 다각도로 설계하고, 3가지 시나리오 실험을 통해 다음과 같은 최종 결론을 도출하였다.
 
 ### 핵심 실험 결과 요약
