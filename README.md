@@ -196,7 +196,7 @@
 
 <p align="center">
  
-<img width="1800" height="825" alt="실험2_공통가중치성능비교" src="https://github.com/user-attachments/assets/590461ca-5e95-4c3a-b2a9-5a065dd9adb5" />
+<img width="2000" height="1000" alt="실험2_공통가중치성능비교" src="https://github.com/user-attachments/assets/590461ca-5e95-4c3a-b2a9-5a065dd9adb5" />
 
 </p>
 
