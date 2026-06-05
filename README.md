@@ -190,8 +190,9 @@
 * **그래프 1: 공통 변수 가중치 부여 조건 (종합 학습)**
 
 <br>
-<img width="1278" height="408" alt="image" src="https://github.com/user-attachments/assets/fd3871d2-5d41-4315-8e65-14a502bffa07" />
 
+<p align="center">
+<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/c698af8b-3aab-4121-a95a-0818d8cff720" />
 </p>
 
 <br>
@@ -200,10 +201,8 @@
 
 <br>
 
-<p align="center">
-  <img width="700" height="375" alt="city100성능대조" src="https://github.com/user-attachments/assets/287e43ef-bb6f-4692-a6d0-b91784dbadeb" />
+<img width="1278" height="408" alt="image" src="https://github.com/user-attachments/assets/49509da0-9025-4c27-bb11-d676ef6fe58d" />
 
-</p>
 
 <br>
 
