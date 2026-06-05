@@ -135,8 +135,9 @@
 
 <br>
 
-* **분석 결과**:데이터 설명력 부분에서 ML 기반의 **LightGBM이 $R^2$ 14.79%, RMSE $971,040**을 기록하며 가장 우수한 성능을 보여주었다. 그 다음으로 DL 기반의 PyTorch Deep DNN($R^2$ 13.24%)이 뒤를 이었다. 효율성 및 비용 측면에서는 ML 기만의 Random Forest가 0.07초를 기록하며 제일 우수한 성능을 보여주었고 ML 기반의 LightGBM이 0.61초의 성능을 보여주며 뒤를 이었다.
-* Random Forest가 0.07초의 시간을 기록하며 제일 적은 시간을 사용했지만 다른 모델들에 비해 가장 낮은 데이터 설명력을 지녔으며, ML기반의 LightGBM이 제일 성능이 좋음에도 불구하고 실행 시간은 2번째인 것을 고려하여 해당 환경에서는 LightGBM을 쓰는 것이 적절하다고 결론지었다.
+* **분석 결과**
+* 데이터 설명력 부분에서 ML 기반의 **LightGBM이 $R^2$ 14.79%, RMSE $971,040**을 기록하며 가장 우수한 성능을 보여주었다. 그 다음으로 DL 기반의 PyTorch Deep DNN($R^2$ 13.24%)이 뒤를 이었다. 효율성 및 비용 측면에서는 ML 기만의 Random Forest가 0.07초를 기록하며 제일 우수한 성능을 보여주었고 ML 기반의 LightGBM이 0.61초의 성능을 보여주며 뒤를 이었다.
+* Random Forest가 0.07초의 시간을 기록하며 제일 적은 시간을 사용했지만 다른 모델들에 비해 가장 낮은 데이터 설명력을 지녔으며, ML기반의 LightGBM이 제일 성능이 좋음에도 불구하고 실행 시간은 2번째인 것을 고려하면 해당 환경에서는 LightGBM 모델이 제일 우수하였다.
 * 또한 해당 실험을 하며 평균 예측 오차(RMSE)가 R2 Score의 방향성과 반대일 뿐 같은 지표를 분석하는 것이고 RMSE는 비교할 기준선이 없다는 것을 고려하면 R2 Score와 비교하였을 때 RMSE는 의미가 없다고 생각하여 다음 실험부터는 사용하지 않기로 결정하였다.
 * 
 ### ② 아키텍처별 내부 가중치 분석 (Feature Importance)
@@ -159,9 +160,7 @@
 ### ① 4대 아키텍처 강제 고정 주입 공통 변수 가중치
 <br>
 
-<p align="center">
-<img width="666" height="400" alt="공통가중치 부여값" src="https://github.com/user-attachments/assets/1053cfe3-8727-439c-9dc8-8fb26bf7a656" />
-</p>
+<img width="822" height="260" alt="image" src="https://github.com/user-attachments/assets/e3f9d18b-ca2e-44e0-8eaf-cea6745f7bf3" />
 
 <br>
 
@@ -191,10 +190,7 @@
 * **그래프 1: 공통 변수 가중치 부여 조건 (종합 학습)**
 
 <br>
-
-<p align="center">
-   
-<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/8d237df6-0d83-45a3-9558-72645a859774" />
+<img width="1278" height="408" alt="image" src="https://github.com/user-attachments/assets/fd3871d2-5d41-4315-8e65-14a502bffa07" />
 
 </p>
 
