@@ -8,9 +8,9 @@
 ---
 # Members
 송진서, 신소재공학부, wlstj4293@hanyang.ac.kr  
-김민철, 신소재공학부, kmfe0710@naver.com
-서민석, 신소재공학부, sms100450@naver.com
-이경현, 신소재공학부, 31245095a@gmail.com
+김민철, 신소재공학부, kmfe0710@naver.com  
+서민석, 신소재공학부, sms100450@naver.com  
+이경현, 신소재공학부, 31245095a@gmail.com  
 
 ---
 # Table of Contents
