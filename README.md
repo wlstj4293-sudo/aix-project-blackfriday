@@ -24,7 +24,8 @@
 3. Conclusion  
  3.1. Trial and Error  
  3.2. Discussion  
-4. Video
+ 3.3. Team roles
+5. Video
 
 ---
 # 1. Introduction
@@ -290,6 +291,12 @@
 **종합**: 이러한 결과는 단일 모델만으로는 데이터의 복잡한 본질을 모두 파악하기 어렵다는 점을 시사한다. 따라서 최적의 예측 결과를 도출하기 위해서는 데이터의 특성을 면밀히 파악하고, 머신러닝과 딥러닝을 아우르는 다양한 아키텍처를 다각도로 시도하는 과정이 필수적이다. 본 프로젝트는 이러한 모델링 전략이 데이터 기반 의사결정의 신뢰도를 높이는 핵심임을 실증하였다.
 
 <br>
+
+## 3.3. Team roles  
+송진서: Dataset Processing / Code modification Support / Main blog writing & editing  
+김민철: Dataset Processing / Architecture selection / Blog writing (Conclusion) / Youtube video recording  
+서민석: Dataset Processing / Main programming / Blog writing (Analysis & Evaluation)  
+이경현: Dataset Processing / Blog writing (Trial & Error, Analysis & Evaluation)  
 
 ---
 ## 4. Video 
