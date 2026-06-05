@@ -117,7 +117,7 @@
 <br>
 <br>
 
-## 2.3. Analaysis & Evaluation
+## 2.3. Analysis & Evaluation
 
 본 프로젝트에서는 일관성 있는 실험 환경을 구축하기 위해 `GLOBAL_SEED = 42`로 고정하였으며, 총 3가지 시나리오 기반의 소스 코드(`code_1`, `code_2`, `code_3`)를 실행하여 4개의 AI 아키텍처(Random Forest, LightGBM, PyTorch Deep DNN, PyTorch Wide NN)의 성능 및 변수 영향도를 다각도로 비교 분석하였다.
 <br>
