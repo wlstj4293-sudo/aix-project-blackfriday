@@ -134,7 +134,7 @@
 <br>
 
 <p align="center">
-  <img width="700" height="375" alt="final 성능대조" src="https://github.com/user-attachments/assets/15911165-879c-43b6-9a81-7583ed2da90f" />
+  <img width="3008" height="1440" alt="실험1_아키텍처별성능비교" src="https://github.com/user-attachments/assets/7859a1dc-4802-4b67-8b1e-ed3b03814d7a" />
 </p>
 
 <br>
@@ -145,7 +145,7 @@
 <br>
 
 <p align="center">
-<img width="750" height="500" alt="아키텍처별 가중치 부여값" src="https://github.com/user-attachments/assets/5b26df9f-c55d-438a-bb60-35e196659d4a" />
+<img width="3002" height="1576" alt="실험1_아키텍처별가중치비교" src="https://github.com/user-attachments/assets/33440641-090b-4108-934c-ac161b4bf257" />
 </p>
 
 <br>
@@ -162,7 +162,7 @@
 <br>
 
 <p align="center">
-<img width="666" height="400" alt="공통가중치 부여값" src="https://github.com/user-attachments/assets/1053cfe3-8727-439c-9dc8-8fb26bf7a656" />
+<img width="2968" height="1498" alt="실험2_공통가중치Value" src="https://github.com/user-attachments/assets/3fea308a-42c1-4e9e-a7a9-e469e4063dc3" />
 </p>
 
 <br>
@@ -174,7 +174,7 @@
 <br>
 
 <p align="center">
-<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/c698af8b-3aab-4121-a95a-0818d8cff720" />
+<img width="2988" height="1370" alt="실험2_공통가중치성능비교" src="https://github.com/user-attachments/assets/818fc7ae-d75a-4f0d-aa9f-8a45956be1ad" />
 </p>
 
 <br>
@@ -195,9 +195,7 @@
 <br>
 
 <p align="center">
-   
-<img width="700" height="375" alt="공통가중치 성능비교" src="https://github.com/user-attachments/assets/8d237df6-0d83-45a3-9558-72645a859774" />
-
+<img width="1800" height="825" alt="실험2_공통가중치성능비교" src="https://github.com/user-attachments/assets/590461ca-5e95-4c3a-b2a9-5a065dd9adb5" />
 </p>
 
 <br>
@@ -207,8 +205,7 @@
 <br>
 
 <p align="center">
-  <img width="700" height="375" alt="city100성능대조" src="https://github.com/user-attachments/assets/287e43ef-bb6f-4692-a6d0-b91784dbadeb" />
-
+<img width="3006" height="1440" alt="실험3_City100성능비교" src="https://github.com/user-attachments/assets/e13328c8-c4da-4c50-896e-74dbb582490a" />
 </p>
 
 <br>
