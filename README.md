@@ -22,7 +22,7 @@
  2.2. Methodology  
  2.3. Analysis & Evaluation  
 3. Conclusion  
- 3.1. Trial and Error  
+ 3.1. Trial & Error  
  3.2. Discussion  
  3.3. Team roles
 5. Video
@@ -226,7 +226,7 @@
 ---
 
 # 3. Conclusion  
-## 3.1. Trial and error  
+## 3.1. Trial & error  
 ### (1) 데이터셋 변경 ①
 본 프로젝트는 초기에 [Retail Black Friday Sales 데이터셋](https://www.kaggle.com/datasets/noopurbhatt/retail-black-friday-sales-dataset)을 활용하여 '평상시'와 '블랙프라이데이' 시즌 간의 소비자 행동 변화를 비교 분석하고자 하였다. 그러나 초기데이터 탐색 및 시각화 과정에서 기존 데이터셋의 한계점을 발견하여 프로젝트 방향을 수정하게 되었다.  
 
