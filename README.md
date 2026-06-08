@@ -411,3 +411,4 @@ Deep DNN은 [128→64→32→1] 로 레이어가 4개이며, 각 레이어마다
 
 ---
 ## 4. Video 
+<https://www.youtube.com/watch?v=Ju0XnXLSNug>
